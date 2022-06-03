@@ -1,0 +1,49 @@
+input {
+    width: 500px;
+    height: 40px;
+    background: rgba(217, 233, 255, 0.38);
+    box-shadow: inset 0px 4px 8px rgba(17, 5, 45, 0.25);
+    border-radius: 6px;
+
+}
+
+.container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.login-container{
+    display: flex;
+    flex-direction:column;
+    gap: 16px;
+}
+
+.login-container label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.login-input{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.username {
+    display: flex;
+    flex-direction: column;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-secondary {
+    align-self: flex-end;
+    margin: 16px;
+}
+
