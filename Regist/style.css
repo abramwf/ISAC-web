@@ -123,16 +123,17 @@ form {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-form p {
+
+.name div, .school div {
     margin-bottom: 20px;
 }
 
-form p label {
+.name div label, .school div label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 5px; 
 }
 
-form p input {
+.name div input, .school div input {
     width: 375px;
     height: 25px;
     padding: 0px 5px;
@@ -154,6 +155,25 @@ form p input {
     padding: 10px 50px;
     cursor: pointer;
 }
+/*
+form p {
+    margin-bottom: 20px;
+}
+
+form p label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form p input {
+    width: 375px;
+    height: 25px;
+    padding: 0px 5px;
+    background-color: #D9E9FF61;
+    border: none;
+
+}
+*/
 /* .reg-button {
     border: 1px solid red ;
     padding: 7px 40px;
