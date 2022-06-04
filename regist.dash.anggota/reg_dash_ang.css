@@ -6,12 +6,16 @@
 
 body {
     background-color: rgb(24, 4, 44);
-    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .container {
-    width: max-content;    
+    width: 100%;   
+    max-width: 700px; 
+    padding: 25px 25px 50px 25px;
 }
 
 .container h1 {
@@ -20,10 +24,11 @@ body {
 
 .container form {
     margin: 50px auto 0px;
-    width: 730px;
-    justify-content: space-between;
+    width: 100%;
+    max-width: 700px;
     display: flex;
-    
+    align-content: flex-end;
+    flex-direction: row;
 }
 
 form input {
@@ -43,7 +48,7 @@ form input {
 }
 
 .image label , input {
-    width: 200px;
+    align-self: stretch;
     display: block;
 }
 
@@ -54,10 +59,8 @@ form input {
     line-height: 239px;
 }
 
-
-
 .team {
-    width: 300px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -68,17 +71,49 @@ form input {
     display: block;
 }
 
+.image-data {
+    flex-direction: column;
+    column-gap: 30px;
+}
+
+.team-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.team .team-data div {
+    width: 100%
+}
+
 .team div input {
-    width: 390px;
+    width: 300px;
+    align-self: stretch;
     height: 30px;
     border: none;
 }
 
 .btn-secondary {
     width: fit-content;
+    align-content: flex-end;
 }
 
-.team .btn-secondary {
+.team .team-data .btn-secondary {
     align-self: flex-end;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .container form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form .team .team-data {
+        align-self: center;
+    }
+
 }
