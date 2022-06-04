@@ -1,57 +1,40 @@
-/* ini awal nav */
-
-header {
-    font-size: 20px;
+nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: rgb(40, 12, 100);
-    height: 55px;
-    position: fixed;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    z-index: 1;
+    background-color: #250B62;
+    padding: 0 1.75rem;
 }
 
-.lognav {
+.logo img{
+    width: 129px;
+    height: 49px;
+}
+
+.nav-content {
+    width: 100%;
     display: flex;
-    margin-left: 30px;
-
+    gap: 54px;
 }
 
-.lognav .logo {
-    width: 150px;
-    background-image: url(/assets/img/Asset\ 3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: -7px;
-    line-height: 55px;
-}
-
-nav ul {
+.nav-menu{
     display: flex;
-    height: 55px;
+    align-items: stretch;
+    gap: 42px;
 }
 
-nav ul li {
-    display: inline-block;
-    margin-left: 50px;
-    line-height: 55px;
+.nav-menu .nav-list{
+    display: flex;
 }
 
-nav ul li:hover {
+.nav-menu .nav-list:hover{
     border-bottom: 4px solid rgb(8, 183, 238);
     box-sizing: border-box;
 }
 
-nav ul li a:hover {
-    color: rgb(8, 183, 238);;
+.nav-menu .nav-list a{
+    margin-top: 1rem;
 }
 
-a {
-    text-decoration: none;
-    font-size: 20px;
+.nav-menu .nav-list a:hover{
+    color: rgb(8, 183, 238);
 }
-
-/* ini akhir navbar */
