@@ -90,14 +90,6 @@
     margin-top: 14px;
 }
 
-
-/* .judul{
-    letter-spacing: 0.15rem;
-    background: -webkit-linear-gradient(-6deg ,#842998 40%, #714DA8 52%, #5C74BA 8%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
-
 .judul {
     letter-spacing: 0.15rem;
     background: -webkit-linear-gradient(0deg, #FEFEFE -20.43%, #27D7E5 13.7%, #5C74BA 49.25%, #7447A5 81.25%, #842998 116.09%);
@@ -118,4 +110,19 @@
     left: 5px;
     top: 3px;
     width: 100%;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .team-profile-container{
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 320px){
+    .regis-list{
+        flex-direction: column;
+    }
 }
