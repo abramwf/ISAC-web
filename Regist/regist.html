@@ -11,19 +11,27 @@
 </head>
 <body>
     <!--ini nav ya deck-->
-    <header>
-            <div class="lognav">
-                <div class="logo"></div>
-                <nav>
-                    <ul>
-                        <li><a href="">about</a></li>
-                        <li><a href="">register</a></li>
-                        <li><a href="">contact person</a></li>
-                    </ul>
-                </nav>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <img src="/assets/img/Asset 3.png" alt="logo.png">
             </div>
-            <div class="login"><button><a href="">login</a></button></div>
-    </header>
+
+            <div class="nav-menu">
+                <div class="nav-list">
+                    <a href="#">about</a>
+                </div>
+                <div class="nav-list">
+                    <a href="#">register</a>
+                </div>
+                <div class="nav-list">
+                    <a href="#">contact person</a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="btn-primary">login</button>
+    </nav>
     <!--ini akhir navbar-->
     <div class="container">
         <div class="title">
@@ -37,6 +45,7 @@
                 <p>to participate in the ISAC event</p>
             </div>
                 <form action="" method="post">
+                    
                     <div class="name">
                         <div class="team-name">
                             <label>NAMA TIM</label>
@@ -65,9 +74,8 @@
                             <input type="text" name="SEKOLAH"/>
                         </div>
                     </div>
-                    <div class="submit">
-                        <input type="submit" value="REGISTER"/>
-                    </div>
+                
+                    <button class="btn-secondary">REGISTER</button> 
                 </form>
             </div>
         </div>

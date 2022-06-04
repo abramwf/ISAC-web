@@ -11,7 +11,7 @@ body {
 
 .container {
     margin: 125px auto ;
-    width: 900px;
+    width: fit-content;
 }
 .title  {
     text-align: center;
@@ -35,10 +35,12 @@ body {
 
 .forms {
     margin: 60px auto 0px;
-    width: 800px;
-    padding: 25px;
+    width: fit-content;
+    padding: 25px 25px 50px 25px;
     background-color: #5D5C7D;
     border-radius: 10px;
+    align-content: flex-end;
+    
 }
 
 .form-title {
@@ -52,9 +54,17 @@ body {
 
 form {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    
 }
+
+.school {
+    
+}
+
 
 .name div, .school div {
     margin-bottom: 20px;
@@ -74,6 +84,16 @@ form {
 
 }
 
+.btn-secondary {
+   align-self: flex-end;
+   position: absolute;
+   left: 80%;
+   top: 100%;
+   padding-bottom: 20px
+}
+
+/*
+
 .submit {
     position: relative;
     left: 600px;
@@ -87,7 +107,7 @@ form {
     padding: 10px 50px;
     cursor: pointer;
 }
-
+*/
 /*
 form p {
     margin-bottom: 20px;

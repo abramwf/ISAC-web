@@ -3,6 +3,11 @@ nav {
     align-items: center;
     background-color: #250B62;
     padding: 0 1.75rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .logo img{
