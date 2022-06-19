@@ -1,0 +1,128 @@
+.profile-list img {
+    background: lightblue;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 138px;
+    margin-bottom: 100px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 84px;
+}
+
+.team-profile-container{
+    display: flex;
+    gap: 138px;
+}
+
+.profile-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.regis-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 126px;
+}
+
+.tagline {
+    display: flex;
+    flex-direction: inherit;
+    gap: 67px;
+    align-items: center;
+}
+
+.tagline .quotes{
+    text-transform: capitalize;
+    font-family: 'Poppins';
+    font-size:24px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+.regis-list {
+    display: flex;
+    gap: 64px;
+}
+
+.lomba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+}
+
+.a h3 {
+    /* outline: 0.2px solid salmon; */
+    letter-spacing: 0.15rem;
+    background: -webkit-linear-gradient(-6deg ,#842998 40%, #714DA8 52%, #5C74BA 8%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: #ffffff;
+}
+
+.b h3 {
+    /* outline: 0.2px solid salmon; */
+    letter-spacing: 0.15rem;
+    background: -webkit-linear-gradient(-6deg ,#27D7E5 25%, #41A7D0 35%, #5C74BA 40%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: #ffffff;
+}
+
+.lomba button {
+    margin-top: 14px;
+}
+
+.judul {
+    letter-spacing: 0.15rem;
+    background: -webkit-linear-gradient(0deg, #FEFEFE -20.43%, #27D7E5 13.7%, #5C74BA 49.25%, #7447A5 81.25%, #842998 116.09%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: #11052D;
+    position: relative;
+}
+
+.judul::after{
+    letter-spacing: 0.15rem;
+    background: -webkit-linear-gradient(0deg, #FEFEFE -20.43%, #27D7E5 13.7%, #5C74BA 49.25%, #7447A5 81.25%, #842998 116.09%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px transparent;
+    content: 'INI TEAM';
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    width: 100%;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .team-profile-container{
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 320px){
+    .regis-list{
+        flex-direction: column;
+    }
+}
