@@ -13,13 +13,32 @@ body {
 }
 
 .container {
-    width: 100%;   
-    max-width: 700px; 
-    padding: 25px 25px 50px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.container h1 {
+.judul {
     text-align: center;
+    letter-spacing: 0.15rem;
+    background: -webkit-linear-gradient(0deg, #FEFEFE -20.43%, #27D7E5 13.7%, #5C74BA 49.25%, #7447A5 81.25%, #842998 116.09%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: #11052D;
+    position: relative;
+}
+
+.judul::after{
+    letter-spacing: 0.15rem;
+    background: -webkit-linear-gradient(0deg, #FEFEFE -20.43%, #27D7E5 13.7%, #5C74BA 49.25%, #7447A5 81.25%, #842998 116.09%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px transparent;
+    content: 'TEAMM HORE';
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    width: 100%;
 }
 
 .container form {
