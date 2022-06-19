@@ -11,7 +11,7 @@ body {
 
 .container {
     margin: 125px auto ;
-    width: 900px;
+    width: fit-content;
 }
 .title  {
     text-align: center;
@@ -34,11 +34,13 @@ body {
 }
 
 .forms {
-    margin: 60px auto 0px;
-    width: 800px;
-    padding: 25px;
+    /* margin: 60px auto 0px; */
+    width: 100%;
+    padding: 25px 25px 50px 25px;
     background-color: #5D5C7D;
     border-radius: 10px;
+    align-content: flex-end;
+    
 }
 
 .form-title {
@@ -52,9 +54,19 @@ body {
 
 form {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
+
+.form-input {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.name , .school {
+    width: 100%;
+}
+
 
 .name div, .school div {
     margin-bottom: 20px;
@@ -66,13 +78,19 @@ form {
 }
 
 .name div input, .school div input {
-    width: 375px;
+    width: 100%;
     height: 25px;
     padding: 0px 5px;
     background-color: #D9E9FF61;
     border: none;
 
 }
+
+.btn-secondary {
+   align-self: flex-end;
+}
+
+/*
 
 .submit {
     position: relative;
@@ -87,7 +105,7 @@ form {
     padding: 10px 50px;
     cursor: pointer;
 }
-
+*/
 /*
 form p {
     margin-bottom: 20px;
@@ -118,3 +136,8 @@ form p input {
 }
 */
 
+@media screen and (max-width: 768px) {
+    .form-input {
+        flex-direction: column;
+    }
+}
