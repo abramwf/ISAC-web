@@ -42,7 +42,7 @@ nav {
     box-sizing: border-box;
 }
 
-.login, h4 {
+.login, h4, .nav-list img {
     display: none;
 }
 
@@ -77,16 +77,27 @@ nav {
 }
 
 @media screen and (max-width:768px) {
-    .h4 h4 {
+    .login a {
+        position: absolute;
+    }
+
+    .h4 h4, .nav-menu .nav-list img {
         display: block;
-        pointer-events: none;
+    }
+
+    .nav-list img {
+        padding-right: 15px;
+    }
+
+    .login img {
+        padding-right: 10px;
     }
 
     .remove {
         pointer-events: none;
     }
 
-    .btn-primary {
+    button {
         display: none;
     }
     
@@ -97,7 +108,7 @@ nav {
         padding: 60px 20px 0 30px;
         position: absolute;
         right: 0px;
-        height: 100vh;
+        height: 1000vh;
         top: 0vh;
         background-color:  #250B62;
         display: block;
@@ -108,13 +119,8 @@ nav {
         transition: transform 0.5s ease-in;
     }
 
-    .nav-menu div:hover, .nav-menu div a:hover {
+    .nav-menu div:hover, .nav-menu div a:hover  {
         background: none ;
-    }
-
-    .nav-menu .nav-list a:hover {
-        background: rgba(50, 16, 128, 0);
-        
     }
 
     .nav-menu div {
