@@ -97,7 +97,7 @@ nav {
         pointer-events: none;
     }
 
-    button {
+    .btn-primary {
         display: none;
     }
     
