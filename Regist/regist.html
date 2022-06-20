@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,16 +10,17 @@
     <link rel="stylesheet" href="../assets/css/navbar.css">
     <link rel="stylesheet" href="regist.css">
 </head>
+
 <body>
     <!--ini nav ya deck-->
     <nav>
         <div class="nav-content">
-            <div class="logo">
-                <img src="/assets/img/Asset 3.png" alt="logo.png">
-            </div>
+            <img src="/assets/img/Asset 3.png" alt="logo.png" class="logo">
 
             <div class="nav-menu">
-                <div class="h4 remove"><h4>Welcome to Isac</h4></div>
+                <div class="h4 remove">
+                    <h4>Welcome to Isac</h4>
+                </div>
                 <div class="nav-list">
                     <img src="/assets/icon/about.svg">
                     <a href="#">about</a>
@@ -37,7 +39,7 @@
                 </div>
             </div>
         </div>
-        
+
         <button class="btn-primary">login</button>
         <div class="burger">
             <div class="line1"></div>
@@ -52,50 +54,52 @@
             <h1 class="under">TO PARTICIPATE THE EVENT</h1>
             <p>You can participate in competition, talkshow about IT, FunGames, Bootcamp, and many things.</p>
         </div>
-        <div class="forms">
+        <div class="form-container">
             <div class="form-title">
                 <h1>REGISTER</h1>
                 <p>to participate in the ISAC event</p>
             </div>
-                <form action="" method="post">
-                    
-                    <div class="form-input">
-                    <div class="name">
-                        <div class="team-name">
-                            <label>NAMA TIM</label>
-                            <input type="text" name="NAMA" class="form-control"/>
+            <form action="" method="post" class="regis-form">
+                <div class="form-input">
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label class="form-label" for="tim">NAMA TIM</label>
+                            <input type="text" class="form-control" name="tim" id="tim">
                         </div>
-                        <div class="username">
-                            <label>USERNAME</label>
-                            <input type="number" name="USERNAME"/>
+                        <div class="form-group">
+                            <label class="form-label" for="email">EMAIL TIM</label>
+                            <input type="text" class="form-control" name="email" id="email">
                         </div>
-                        <div class="password">
-                            <label>PASSWORD</label>
-                            <input type="password" name="PASSWORD"/>
+                        <div class="form-group">
+                            <label class="form-label" for="password">PASSWORD</label>
+                            <input type="password" class="form-control" name="password" id="password">
                         </div>
                     </div>
-                    <div class="school">
-                        <div class="province">
-                            <label>PROVINSI SEKOLAH</label>
-                            <input type="text" name="PROVINSI"/>
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label class="form-label" for="provSekolah">PROVINSI SEKOLAH</label>
+                            <input type="text" class="form-control" name="provSekolah" id="provSekolah">
                         </div>
-                        <div class="city">
-                            <label>KOTA SEKOLAH</label>
-                            <input type="text" name="KOTA"/>
+                        <div class="form-group">
+                            <label class="form-label" for="kotaSekolah">KOTA SEKOLAH</label>
+                            <input type="text" class="form-control" name="kotaSekolah" id="kotaSekolah">
                         </div>
-                        <div class="name-school">
-                            <label>NAMA SEKOLAH</label>
-                            <input type="text" name="SEKOLAH"/>
+                        <div class="form-group">
+                            <label class="form-label" for="namaSekolah">NAMA SEKOLAH</label>
+                            <input type="text" class="form-control" name="namaSekolah" id="namaSekolah">
                         </div>
-                        <div class="login"><a href="">login</a></div>
                     </div>
-                    </div>
-                
-                    <button class="btn-secondary">REGISTER</button> 
-                </form>
-            </div>
+                </div>
+
+                <div class="form-btn">
+                    <p>Sudah memiliki akun? <a href="#">Login</a></p>
+                    <button class="btn-secondary">REGISTER</button>
+                </div>
+            </form>
         </div>
+    </div>
     </div>
     <script src="/assets/js/navscript.js"></script>
 </body>
+
 </html>

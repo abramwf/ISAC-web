@@ -14,12 +14,12 @@
 <body>
     <nav>
         <div class="nav-content">
-            <div class="logo">
-                <img src="/assets/img/Asset 3.png" alt="logo.png">
-            </div>
+            <img src="/assets/img/Asset 3.png" alt="logo.png" class="logo">
 
             <div class="nav-menu">
-                <div class="h4 remove"><h4>Hello kelompok 4</h4></div>
+                <div class="h4 remove">
+                    <h4>Hello kelompok 4</h4>
+                </div>
                 <div class="nav-list">
                     <img src="/assets/icon/login_profile.svg">
                     <a href="#">profile</a>
@@ -51,46 +51,52 @@
         </div>
     </nav>
     <div class="container">
-        <h1 class="judul">TEAMM HORE</h1>
-        <form action="">
+        <h1 class="judul" data-tim="TEAMM HORE">TEAMM HORE</h1>
+        <form action="" class="add-anggota-form">
             <div class="image">
-                <div class="image-data">
-                    <label>PAS FOTO</label>
-                    <input type="image" value="PREVIEW FOTO">
-                </div>
-                <button class="btn-secondary">UNGGAH FOTO</button>
+                <h4>PAS FOTO</h4>
+                <img src="../assets/img/pas.jpg" alt="" class="view-pasFoto">
+                <input type="file" accept="image/png, image/jpg" class="hidden" name="pasFoto" id="pasFoto">
+                <label for="pasFoto" class="button btn-primary">UNGGAH FOTO</label>
             </div>
-            <div class="team">
-                <div class="team-data">
-                    <div class="nama">
-                        <label>NAMA</label>
-                        <input type="text">
-                    </div>
-                    <div class="tgl-lahir">
-                        <label>TANGGAL LAHIR</label>
-                        <input type="text">
-                    </div>
-                    <div class="status">
-                        <label>STATUS</label>
-                        <input type="text">
-                    </div>
-                    <div class="wa">
-                        <label>WHATSAPP</label>
-                        <input type="number">
-                    </div>
-                    <div class="bukti">
-                        <label>BUKTI SISWA AKTIF</label>
-                        <input type="text">
-                    </div>
-                    <button class="btn-secondary">NEXT</button>
+            <div class="team-data">
+                <div class="form-group">
+                    <label class="form-label" for="nama">NAMA LENGKAP</label>
+                    <input type="text" class="form-control" name="nama" id="nama">
                 </div>
-                
-               
+                <div class="form-group">
+                    <label class="form-label" for="tanggalLahir">TANGGAL LAHIR</label>
+                    <input type="text" class="form-control" name="tanggalLahir" id="tanggalLahir">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="status">STATUS</label>
+                    <input type="text" class="form-control" name="status" id="status">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="whatsapp">WHATSAPP</label>
+                    <input type="text" class="form-control" name="whatsapp" id="whatsapp">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="siswaAktif">BUKTI SISWA AKTIF</label>
+                    <input type="text" class="form-control" name="siswaAktif" id="siswaAktif">
+                </div>
+                <button type="submit" class="btn-secondary">SUBMIT DATA</button>
             </div>
-
         </form>
     </div>
     <script src="/assets/js/navscript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $('#pasFoto').change(() => {
+            let reader = new FileReader();
+            reader.onload = e => {
+                $('.view-pasFoto').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL($('#pasFoto')[0].files[0]);
+        })
+    </script>
 </body>
 
 </html>

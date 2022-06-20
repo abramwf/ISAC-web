@@ -1,12 +1,5 @@
-input {
-    width: 100%;
-    height: 40px;
-    background: rgba(217, 233, 255, 0.38);
-    box-shadow: inset 0px 4px 8px rgba(17, 5, 45, 0.25);
-    border-radius: 6px;
-}
-
-.container { 
+.container {
+    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,42 +7,14 @@ input {
     gap: 32px;
 }
 
-.login-container{
+.login-container {
     display: flex;
-    flex-direction:column;
-    gap: 16px;
+    flex-direction: column;
+    gap: 1.5rem;
     width: 100%;
     max-width: 500px;
 }
 
-.login-container label {
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.login-container a{
-    font-size: 12px;
-}
-
-.login-input{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    width: 100%;
-}
-
-.username {
-    display: flex;
-    flex-direction: column;
-}
-
-.password {
-    display: flex;
-    flex-direction: column;
-}
-
 .btn-secondary {
     align-self: flex-end;
-    margin: 16px;
 }
-
