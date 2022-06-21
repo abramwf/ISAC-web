@@ -49,7 +49,7 @@ nav {
 .nav-menu div:hover,  .nav-menu div:hover a {
     color: rgb(8, 183, 238);
     cursor: pointer;
-    background-color: rgba(50, 16, 128, 0.7);
+    /*background-color: rgba(50, 16, 128, 0.7);*/
     box-sizing: border-box;
 }
 
@@ -119,8 +119,12 @@ nav {
         transition: transform 0.5s ease-in;
     }
 
-    .nav-menu div:hover, .nav-menu div a:hover  {
+    .nav-menu div:hover , .nav-menu div a:hover  {
         background: none ;
+    }
+
+    .nav-menu div a:hover {
+        background-color: #250B62;
     }
 
     .nav-menu div {
