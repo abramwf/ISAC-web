@@ -203,3 +203,97 @@
     text-align: center;
     line-height: 4;
 }
+
+.sponsor {
+    background-color: rgba(217, 233, 255, 0.2);
+    margin: auto;
+    width: 90%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 10vh;
+}
+
+.sponsor h2 {
+    padding: 20px;
+    background: linear-gradient(90deg, #BBABDC 10.14%, #8B61E7 90.35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background: #11052D;
+    padding: 100px 0 135px 0;
+    position: relative;
+    z-index: 1;
+    /*background-image: url(/assets/img/under-mars.png);
+    background-repeat: no-repeat;
+    background-size: 645px;
+    background-position-x: 400px;
+    background-position-y: 125px;*/
+}
+
+.footer h1 {
+    padding-bottom: 100px;
+    color: rgb(40, 12, 100);
+    background: linear-gradient(to right, rgba(39, 215, 229, 100%) 0%, rgba(92, 116, 186, 20) 30%, rgba(116, 71, 165, 100%)100%, rgba(132, 41, 152, 100%) 150%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 8px transparent;
+    
+}
+
+.contact-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+.contact h2, h3, p {
+    margin-bottom: 5px;
+}
+
+.line {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+}
+
+.mars {
+    background-image: url(/assets/img/under-mars.png);
+    width: 634.59px;
+    height: 449.4px;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    right: 0.1px;
+    bottom: -50px;
+}
+
+.saturn {
+    background-image: url(/assets/img/under-saturn.png);
+    width: 150px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -2;
+    bottom: 100px;
+    right: -0px;
+}
