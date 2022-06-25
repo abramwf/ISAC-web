@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +10,16 @@
     <link rel="stylesheet" href="style_dash_regist_ast.css">
     <title>DASHBOARD REGIST</title>
 </head>
+
 <body>
     <nav>
         <div class="nav-content">
-            <div class="logo">
-                <img src="/assets/img/Asset 3.png" alt="logo.png">
-            </div>
+            <img src="/assets/img/Asset 3.png" alt="logo" class="logo">
 
             <div class="nav-menu">
-                <div class="h4 remove"><h4>Hello kelompok 4</h4></div>
+                <div class="h4">
+                    Hello kelompok 4
+                </div>
                 <div class="nav-list">
                     <img src="/assets/icon/login_profile.svg">
                     <a href="#">profile</a>
@@ -40,7 +42,7 @@
                 </div>
             </div>
         </div>
-        
+
         <button class="btn-primary">login</button>
         <div class="burger">
             <div class="line1"></div>
@@ -48,33 +50,48 @@
             <div class="line3"></div>
         </div>
     </nav>
-    <div class="container">
-        <div class="astronot">
-            <img src="/assets/img/astronot.png" alt="" width="500px">
-        </div>
-        <div class="content">
-            <div class="title">
-                <h1 class="above">
-                    REGISTER
+    <div class="container regis-olim">
+        <img src="/assets/img/astronot.png" class="astronot">
+        <div class="regis-olim__content">
+            <div class="regis-olim__title-section">
+                <h1 class="regis-olim__title">
+                    REGISTER <br>
+                    YOUR TEAM <br>
+                    <span>
+                        TO PARTICIPATE <br>
+                    </span>
+                    <span>
+                        OLYMPIAD
+                    </span>
                 </h1>
-                <h1 class="above">
-                    YOUR TEAM
-                </h1>
-                <h1 class="under">
-                    TO PARTICIPATE
-                </h1>
-                <h1 class="under">
-                    OLYMPIAD
-                </h1>
-                <p>Bila ingin mengikuti lomba bisa membayar ke rekening BNA 231xxx, sejumlah Rp 25.000,00. Bukti pembayaran dapat di upload pada form di bawah.</p>
+                <p class="regis-olim__subtitle">
+                    Untuk mengikuti ISAC Olympiad, tim dapat melakukan pembayaran sejumlah Rp99.999.999,-
+                    melalui salah satu dari beberapa opsi pembayaran di bawah.
+                </p>
             </div>
-            <form action="" method="">
-                <label>Bukti Bayar</label>
-                <input type="text">
-                <input type="submit" value="SUBMIT">
+            <form action="" method="" class="regis-olim__form">
+                <div class="form-group">
+                    <label class="form-label" for="buktiBayar">Bukti Bayar (JPG atau PNG)</label>
+                    <input type="file" accept="image/jpg, image/png" class="form-control file-control" name="buktiBayar"
+                        id="buktiBayar">
+                    <label for="buktiBayar" class="file-label">
+                        <span id="buktiBayar_filename" class="file-label__label"></span>
+                        <div class="button btn-primary file-label__btn">Pilih File</div>
+                    </label>
+                </div>
+                <button type="submit" class="btn-secondary">SUBMIT</button>
             </form>
         </div>
     </div>
+
     <script src="/assets/js/navscript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $('#buktiBayar').change(e => {
+            $('#buktiBayar_filename')[0].innerHTML = e.currentTarget.files[0].name;
+        })
+    </script>
 </body>
+
 </html>

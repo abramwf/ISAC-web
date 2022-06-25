@@ -8,48 +8,54 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: 138px;
-    margin-bottom: 100px;
+    gap: 6rem;
+    padding-bottom: 3rem;
 }
 
 .profile-container {
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 84px;
+    gap: 4rem;
 }
 
-.team-profile-container{
+.team-profile-container {
+    width: 100%;
     display: flex;
-    gap: 138px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 2rem;
 }
 
-.profile-list{
+.profile-list {
+    width: calc((90% - 4rem)/3);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
 }
 
+.profile-list>* {
+    text-align: center;
+}
 
 .regis-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 126px;
+    gap: 9rem;
 }
 
 .tagline {
     display: flex;
     flex-direction: inherit;
-    gap: 67px;
+    gap: 4rem;
     align-items: center;
 }
 
-.tagline .quotes{
+.tagline .quotes {
     text-transform: capitalize;
-    font-family: 'Poppins';
-    font-size:24px;
     font-weight: 400;
     font-style: italic;
     text-align: center;
@@ -57,10 +63,11 @@
 
 .regis-list {
     display: flex;
-    gap: 64px;
+    gap: 4rem;
 }
 
 .lomba {
+    width: calc(50% - 2rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +78,7 @@
 .a h3 {
     /* outline: 0.2px solid salmon; */
     letter-spacing: 0.15rem;
-    background: -webkit-linear-gradient(-6deg ,#842998 40%, #714DA8 52%, #5C74BA 8%);
+    background: -webkit-linear-gradient(-6deg, #842998 40%, #714DA8 52%, #5C74BA 8%);
     -webkit-background-clip: text;
     -webkit-text-stroke: 4px transparent;
     color: #ffffff;
@@ -80,7 +87,7 @@
 .b h3 {
     /* outline: 0.2px solid salmon; */
     letter-spacing: 0.15rem;
-    background: -webkit-linear-gradient(-6deg ,#27D7E5 25%, #41A7D0 35%, #5C74BA 40%);
+    background: -webkit-linear-gradient(-6deg, #27D7E5 25%, #41A7D0 35%, #5C74BA 40%);
     -webkit-background-clip: text;
     -webkit-text-stroke: 4px transparent;
     color: #ffffff;
@@ -99,7 +106,7 @@
     position: relative;
 }
 
-.judul::after{
+.judul::after {
     letter-spacing: 0.15rem;
     background: -webkit-linear-gradient(0deg, #FEFEFE -20.43%, #27D7E5 13.7%, #5C74BA 49.25%, #7447A5 81.25%, #842998 116.09%);
     -webkit-background-clip: text;
@@ -114,15 +121,15 @@
 
 /* Tablet */
 @media screen and (max-width: 768px) {
-    .team-profile-container{
+    .team-profile-container {
         flex-direction: column;
         gap: 32px;
     }
 }
 
 /* Mobile */
-@media screen and (max-width: 320px){
-    .regis-list{
+@media screen and (max-width: 320px) {
+    .regis-list {
         flex-direction: column;
     }
 }

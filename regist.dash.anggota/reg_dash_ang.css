@@ -1,21 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    color: white;
-}
-
-body {
-    background-color: rgb(24, 4, 44);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .container {
+    padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3rem;
 }
 
 .judul {
@@ -28,76 +16,51 @@ body {
     position: relative;
 }
 
-.judul::after{
+.judul::after {
     letter-spacing: 0.15rem;
     background: -webkit-linear-gradient(0deg, #FEFEFE -20.43%, #27D7E5 13.7%, #5C74BA 49.25%, #7447A5 81.25%, #842998 116.09%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0px transparent;
-    content: 'TEAMM HORE';
+    content: attr(data-tim);
     position: absolute;
     left: 5px;
     top: 3px;
     width: 100%;
 }
 
-.container form {
-    margin: 50px auto 0px;
+.add-anggota-form {
     width: 100%;
     max-width: 700px;
     display: flex;
-    align-content: flex-end;
-    flex-direction: row;
-}
-
-form input {
-    background-color: #D9E9FF61;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .image {
+    width: 35%;
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    row-gap: 15px;
-    
+    gap: .5rem;
 }
 
-.image .btn-secondary {
+.view-pasFoto {
+    width: 100%;
+    border-radius: .25rem;
+}
+
+.image .btn-primary {
+    margin-top: .5rem;
     align-self: flex-end;
 }
 
-.image label , input {
-    align-self: stretch;
-    display: block;
-}
-
-.image input[type="image"] {
-    width: 239px;
-    height: 239px;
-    text-align: center;
-    line-height: 239px;
-}
-
-.team {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 15px;
-}
-
-.team div label {
-    display: block;
-}
-
-.image-data {
-    flex-direction: column;
-    column-gap: 30px;
-}
-
 .team-data {
+    width: calc(65% - 2rem);
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
 }
 
 .team .team-data div {
@@ -125,14 +88,24 @@ form input {
     .container {
         flex-direction: column;
     }
-    .container form {
+
+    .add-anggota-form {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    form .team .team-data {
+    .image {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .image .btn-primary {
         align-self: center;
+    }
+
+    .team-data {
+        width: 100%;
     }
 
 }
