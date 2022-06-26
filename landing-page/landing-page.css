@@ -171,11 +171,21 @@
     text-shadow: 0px 4px 20px rgba(40, 214, 229, 0.7);
 }
 
-/* .agenda {
+.agenda {
     display: flex;
     flex-direction: column;
-} */
+    justify-content: space-between;
+}
 
+.tl-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tl-content button {
+    width: fit-content
+}
 
 .tl-container > p {
     display: flex;
