@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/env.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="admin_form.css">
+    <title>Admin Form</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <img src="/assets/img/Asset 3.png" alt="logo.png" class="logo">
+
+            <div class="nav-menu">
+                <div class="h4 remove">
+                    <h4>Hello kelompok 4</h4>
+                </div>
+                <div class="nav-list">
+                    <img src="/assets/icon/login_profile.svg">
+                    <a href="#">verifikasi</a>
+                </div>
+                <div class="nav-list">
+                    <img src="/assets/icon/olympiad.svg">
+                    <a href="#">kelompok</a>
+                </div>
+                <div class="nav-list">
+                    <img src="/assets/icon/uiux.svg">
+                    <a href="#">olympiad</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-primary">login</button>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="title-form">
+            <h1 class="title">Soal Olympiad</h1>
+            <button class="btn-secondary">LIST SOAL</button>
+        </div>
+        <form action="" class="form-admin">
+            <div class="question">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div class="wrap-input">
+                    <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
+                    <input type="reset" id="reset">
+                    <img src="" class="margin-x-auto" id="image">
+                </div>
+            </div>
+            <div class="choice">
+                <p>A</p>
+                <div class="choice-input">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="wrap-input">
+                        <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
+                        <input type="reset" id="reset">
+                        <img src="" class="margin-x-auto" id="image">
+                    </div>
+                </div>
+            </div>
+            <div class="choice">
+                <p>B</p>
+                <div class="choice-input">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="wrap-input">
+                        <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
+                        <input type="reset" id="reset">
+                        <img src="" class="margin-x-auto" id="image">
+                    </div>
+                </div>
+            </div>
+            <div class="choice">
+                <p>C</p>
+                <div class="choice-input">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="wrap-input">
+                        <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
+                        <input type="reset" id="reset">
+                        <img src="" class="margin-x-auto" id="image">
+                    </div>
+                </div>
+            </div>
+            <div class="choice">
+                <p>D</p>
+                <div class="choice-input">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="wrap-input">
+                        <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
+                        <input type="reset" id="reset">
+                        <img src="" class="margin-x-auto" id="image">
+                    </div>
+                </div>
+            </div>
+            <div class="choice">
+                <p>E</p>
+                <div class="choice-input">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="wrap-input">
+                        <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
+                        <input type="reset" id="reset">
+                        <img src="" class="margin-x-auto" id="image">
+                    </div>
+                </div>
+            </div>
+            <div class="select-div">
+                <img src="/assets/icon/arrow-down.png" alt="">
+                <select class="select" name="abcde">
+                    <option value="Jawaban yang benar adalah A">Jawaban yang benar adalah A</option>
+                    <option value="Jawaban yang benar adalah B">Jawaban yang benar adalah B</option>
+                    <option value="Jawaban yang benar adalah C">Jawaban yang benar adalah C</option>
+                    <option value="Jawaban yang benar adalah D">Jawaban yang benar adalah D</option>
+                    <option value="Jawaban yang benar adalah E">Jawaban yang benar adalah E</option>
+                </select>
+            </div>
+            <button class="btn-secondary" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="/assets/js/navscript.js"></script>
+    <script>
+        function inputFile(value) {
+            const url = value.value;
+            if (value && value.files.length > 0) {
+            const img = document.getElementById('image');
+            const reset = document.getElementById('reset');
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                img.setAttribute('src', e.target.result);
+                reset.style.display = 'inline';
+                img.style.display = 'inline'
+                reset.addEventListener('click', function() {
+                    img.style.display = 'none';
+                    reset.style.display = 'none';
+                });
+                
+            }
+            reader.readAsDataURL(value.files[0])
+            }
+        }
+    </script>
+</body>
+</html>
