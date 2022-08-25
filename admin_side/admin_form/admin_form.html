@@ -12,7 +12,7 @@
 <body>
     <nav>
         <div class="nav-content">
-            <img src="/assets/img/Asset 3.png" alt="logo.png" class="logo">
+            <img src="/assets/img/logo-isac.png" alt="logo.png" class="logo">
 
             <div class="nav-menu">
                 <div class="h4 remove">
@@ -50,9 +50,12 @@
             <div class="question">
                 <textarea name="" id="" cols="30" rows="10"></textarea>
                 <div class="wrap-input">
-                    <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
+                    <img src="../assets/img/pas.jpg" alt="" class="view-pasFoto">
+                    <input type="file" accept="image/png, image/jpg" class="hidden" name="pasFoto" id="pasFoto">
+                    <label for="pasFoto" class="button btn-input">UNGGAH FOTO</label>
+                    <!-- <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
                     <input type="reset" id="reset">
-                    <img src="" class="margin-x-auto" id="image">
+                    <img src="" class="margin-x-auto" id="image"> -->
                 </div>
             </div>
             <div class="choice">
@@ -60,9 +63,9 @@
                 <div class="choice-input">
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                     <div class="wrap-input">
-                        <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
-                        <input type="reset" id="reset">
-                        <img src="" class="margin-x-auto" id="image">
+                        <img src="../assets/img/pas.jpg" alt="" class="view-pasFoto">
+                        <input type="file" accept="image/png, image/jpg" class="hidden" name="pasFoto" id="pasFoto">
+                        <label for="pasFoto" class="button btn-input">UNGGAH FOTO</label>
                     </div>
                 </div>
             </div>
@@ -71,9 +74,12 @@
                 <div class="choice-input">
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                     <div class="wrap-input">
-                        <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
+                        <img src="../assets/img/pas.jpg" alt="" class="view-pasFoto">
+                    <input type="file" accept="image/png, image/jpg" class="hidden" name="pasFoto" id="pasFoto">
+                    <label for="pasFoto" class="button btn-input">UNGGAH FOTO</label>
+                        <!-- <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
                         <input type="reset" id="reset">
-                        <img src="" class="margin-x-auto" id="image">
+                        <img src="" class="margin-x-auto" id="image"> -->
                     </div>
                 </div>
             </div>
@@ -82,9 +88,12 @@
                 <div class="choice-input">
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                     <div class="wrap-input">
-                        <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
+                        <img src="../assets/img/pas.jpg" alt="" class="view-pasFoto">
+                    <input type="file" accept="image/png, image/jpg" class="hidden" name="pasFoto" id="pasFoto">
+                    <label for="pasFoto" class="button btn-input">UNGGAH FOTO</label>
+                        <!-- <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
                         <input type="reset" id="reset">
-                        <img src="" class="margin-x-auto" id="image">
+                        <img src="" class="margin-x-auto" id="image"> -->
                     </div>
                 </div>
             </div>
@@ -93,9 +102,12 @@
                 <div class="choice-input">
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                     <div class="wrap-input">
-                        <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
+                        <img src="../assets/img/pas.jpg" alt="" class="view-pasFoto">
+                    <input type="file" accept="image/png, image/jpg" class="hidden" name="pasFoto" id="pasFoto">
+                    <label for="pasFoto" class="button btn-input">UNGGAH FOTO</label>
+                        <!-- <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
                         <input type="reset" id="reset">
-                        <img src="" class="margin-x-auto" id="image">
+                        <img src="" class="margin-x-auto" id="image"> -->
                     </div>
                 </div>
             </div>
@@ -104,9 +116,12 @@
                 <div class="choice-input">
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                     <div class="wrap-input">
-                        <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
+                        <img src="../assets/img/pas.jpg" alt="" class="view-pasFoto">
+                    <input type="file" accept="image/png, image/jpg" class="hidden" name="pasFoto" id="pasFoto">
+                    <label for="pasFoto" class="button btn-input">UNGGAH FOTO</label>
+                        <!-- <input onchange="inputFile(this)" type="file" id="fileImg" accept="image/png, image/jpg, image/jpeg" value="PILIH VALUE"/>
                         <input type="reset" id="reset">
-                        <img src="" class="margin-x-auto" id="image">
+                        <img src="" class="margin-x-auto" id="image"> -->
                     </div>
                 </div>
             </div>
@@ -124,26 +139,22 @@
         </form>
     </div>
     <script src="/assets/js/navscript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
-        function inputFile(value) {
-            const url = value.value;
-            if (value && value.files.length > 0) {
-            const img = document.getElementById('image');
-            const reset = document.getElementById('reset');
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                img.setAttribute('src', e.target.result);
-                reset.style.display = 'inline';
-                img.style.display = 'inline'
-                reset.addEventListener('click', function() {
-                    img.style.display = 'none';
-                    reset.style.display = 'none';
-                });
-                
+        $('#pasFoto').change(() => {
+            const image = document.querySelectorAll('#pasFoto')
+            let reader = new FileReader();
+            
+            reader.onload = e => {
+                $('.view-pasFoto').attr('src', e.target.result);
             }
-            reader.readAsDataURL(value.files[0])
+            for (let i = 0; i < image.length; i++) {
+                reader.readAsDataURL($('#pasFoto')[i].files[i]);
             }
-        }
+            
+        })
     </script>
+
 </body>
 </html>

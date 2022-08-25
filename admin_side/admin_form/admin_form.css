@@ -15,6 +15,10 @@ textarea {
     color: #000000;
 }
 
+.btn-primary {
+    color: #ffff;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -90,11 +94,45 @@ textarea {
     background-color: #ffff;
 }
 
+.wrap-input {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 5px 5px 10px 5px;
+    max-width: 286.29px;
+}
 
-.wrap-input img {
-    height: 300px;
+
+.wrap-input input {
+    text-align: left;
+}
+
+.btn-input {
+    color: #000000;
+    
 }
 
 #reset {
     display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .choice p {
+        left: -20px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .title-form {
+
+        
+        flex-direction: column;
+    }
+
+    .title-form  h1 {
+        white-space: nowrap;
+        font-size: 2em;
+    }
 }
